@@ -1,0 +1,147 @@
+.dialog-container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 2px 9px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.75);
+    width: 45vw;
+    min-height: 40vh;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+    transition: 0.05s all ease-out;
+    z-index: 4;
+    font-family: Lexend Deca;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.dialog-backdrop {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.form-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 3fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+}
+
+.dialog-header {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0);
+    font-weight: bold;
+}
+
+.dialog-container form input {
+    width: 80%;
+}
+
+.dialog-container form input,
+.dialog-container form select {
+    padding: 12px;
+    margin: 3px;
+    font-family: Lexend Deca;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dialog-inputs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dialog-select-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.dialog-select-container select {
+    width: 45%;
+}
+
+.dialog-container-hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dialog-footer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dialog-buttons-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.dialog-buttons-container button {
+    width: 100px;
+    height: 50px;
+    font-size: 1.3em;
+    font-family: Lexend Deca;
+    margin: 5px;
+    transition: all 0.1s ease-out;
+    border-radius: 2px;
+}
+
+.dialog-buttons-container button.secondary:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.hovered {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.dialog-input-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.dialog-input-row-container div input {
+    width: 100%;
+}
+
+.dialog-errors {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f44336d0;
+}

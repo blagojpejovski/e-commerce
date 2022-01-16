@@ -1,0 +1,205 @@
+.products-container {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.products-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+    width: 90%;
+    min-height: 150px;
+}
+
+.products-header button.primary {
+    padding: 15px;
+    font-size: 1.75em;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.products-header button.primary:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.sort-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort-container select {
+    height: 50%;
+    font-size: 1.75em;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.sort-container select:hover {
+    background-color: white;
+    color: black;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    width: 90%;
+    height: 90%;
+    justify-self: center;
+}
+
+.product-list {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 2px 9px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 10px 0px 10px 10px;
+}
+
+.product-list-item {
+    width: 90%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-family: Lexend Deca;
+    font-size: 2em;
+    transition: all 0.15s ease-out;
+    flex-shrink: 0;
+}
+
+.product-list-item:hover {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+}
+
+.product-list-item-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 0.7em;
+}
+
+.product-list-item-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.product-list-item-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.2em;
+}
+
+.product-details {
+    padding: 10px;
+    margin: auto;
+    margin-right: 0;
+    background-color: white;
+    box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 2px 9px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 90%;
+}
+
+.product-image-container {
+    height: 50%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    margin: auto;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.product-info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    width: 90%;
+    height: 90%;
+    font-family: Lexend Deca;
+}
+
+.product-header {
+    font-size: 2em;
+    font-weight: 700;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.product-id {
+    font-size: 0.75em;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.product-description {
+    padding: 0px 10px 0px 10px;
+    font-size: 1.75em;
+    color: rgba(136, 136, 136, 0.85);
+}
